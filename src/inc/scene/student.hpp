@@ -9,6 +9,7 @@
 #include <algorithm>
 #include <vector>
 #include <stack>
+#include <limits>
 
 using namespace MAIEV;
 
@@ -30,17 +31,15 @@ namespace MAIEV{
                 st_scene.push(CONSTANT::SCENE::STUDENT);
 
                 while(true){
-                    std::string choose;
-                    std::cin >> choose;
-                    std::cout << "Your choose is >>: " << choose << std::endl;
-                    std::cout << "plz wait !!! \n"
-                              << "and tks for you attention \n"
-                              << std::endl;
-                    bool flag = COMMON::action(COMMON::choose2Menu(choose), *this);
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    readData();
+                    bool flag = action();
 
                     if (!flag){
                         break;
                     }
+
+                    std::cout << "next loop : " << std::endl;
                 }
             }
 
@@ -61,27 +60,63 @@ namespace MAIEV{
             {
                 std::cout << "this is a demo for student\n";
                 std::cout << "Usage: [add|edit|del|up|down] [studentinfos]\n";
+                std::cout << "help??\n";
                 std::cout << "add [name no grade sex] \n";
-                std::cout << "view [name no grade sex] \n";
+                std::cout << "view [no] \n";
                 std::cout << "edit [name no grade sex] \n";
-                std::cout << "up [name no grade sex] \n";
-                std::cout << "down [name no grade sex] \n";
+                std::cout << "up [no step] \n";
+                std::cout << "down [no step] \n";
 
                 return true;
             }
 
-            bool act()
+            bool action()
             {
+                std::string act = this->_act_data.front();
+                this->_act_data.pop_front();
+
+                std::cout << "act : " << act << std::endl;
+                Menu menu = choose2Menu(act);
+
+                bool flag(false);
+                switch (menu){
+                    case Menu::HELP :
+                    default:
+                        std::cout << "help??" << std::endl;
+                        flag = help();
+                        break;
+                    case Menu::SEARCH :
+                        flag = search();
+                        break;
+                    case Menu::ADD :
+                        flag = add();
+                        break;
+                    case Menu::VIEW :
+                        flag = view();
+                        break;
+                    case Menu::QUIT:
+                        flag = quit();
+                        break;
+                }
+
+                return flag;
+            }
+
+            bool add()
+            {
+                std::cout << "add" << std::endl;
                 return true;
             }
 
             bool view()
             {
+                std::cout << "view" << std::endl;
                 return true;
             }
 
             bool search()
             {
+                std::cout << "search" << std::endl;
                 return true;
             }
 
@@ -90,6 +125,36 @@ namespace MAIEV{
                 st_scene.pop();
 
                 return false;
+            }
+
+        private:
+            void readData()
+            {
+                std::cout << "and enter you data for actions: " << std::endl;
+                std::string data;
+                if ( std::getline(std::cin, data)){
+                    std::cout << data << std::endl;
+                    this->parseData(data);
+                }else{
+                    std::cout << "get-line:error: " << std::endl;
+                }
+            }
+
+            Menu choose2Menu(std::string choose)
+            {
+                if (choose == "help"){
+                    return Menu::HELP;
+                }else if (choose == "search"){
+                    return Menu::SEARCH;
+                }else if (choose == "add"){
+                    return Menu::ADD;
+                }else if (choose == "view"){
+                    return Menu::VIEW;
+                }else if (choose == "quit"){
+                    return Menu::QUIT;
+                }else{
+                    return Menu::UNKNOW;
+                }
             }
         };
     }

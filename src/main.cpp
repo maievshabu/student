@@ -18,8 +18,6 @@ int main() {
     COMMON::logo();
     st_scene.push(CONSTANT::SCENE::UNKNOW);
     COMMON::hello();
-    ENTITY::Student st("uuu", "123", 1);
-    vc_students.push_back(st);
 
     while(true)
     {
@@ -27,19 +25,20 @@ int main() {
         std::cout << "plz enter you scene: if you don't how to start! plz enter help!\n";
         std::cin >> scene;
 
-        bool flag = COMMON::scene(scene);
+        if (scene == "quit"){
+            break;
+        }
+
+        bool flag = COMMON::scene(std::move(scene));
 
         if (!flag){
            break;
         }
     }
 
-    //检查师傅还有其他场景
+    //检查是否还有其他场景
     if (st_scene.size() > 2){
         //场景退出
-    }
-
-    if (st_scene.size() != 1){
         std::cout << "so you have more 1 scenes!!! plz quit from it" << std::endl;
     }
 

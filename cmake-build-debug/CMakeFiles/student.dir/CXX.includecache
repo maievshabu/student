@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+C:/work/student/src/common/common.cpp
+../inc/constant/menu.hpp
+C:/work/student/src/inc/constant/menu.hpp
+../inc/scene/base.hpp
+C:/work/student/src/inc/scene/base.hpp
+../inc/scene/student.hpp
+C:/work/student/src/inc/scene/student.hpp
+limits
+-
+
 C:/work/student/src/inc/common/common.hpp
 ../constant/menu.hpp
 C:/work/student/src/inc/constant/menu.hpp
@@ -19,8 +29,10 @@ C:/work/student/src/inc/constant/scene.hpp
 C:/work/student/src/inc/scene/base.hpp
 iostream
 -
-../constant/menu.hpp
-C:/work/student/src/inc/constant/menu.hpp
+deque
+-
+sstream
+-
 
 C:/work/student/src/inc/scene/student.hpp
 ../student.hpp
@@ -36,6 +48,8 @@ algorithm
 vector
 -
 stack
+-
+limits
 -
 
 C:/work/student/src/inc/student.hpp

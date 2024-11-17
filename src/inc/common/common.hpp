@@ -27,7 +27,7 @@ namespace MAIEV{
 
         void sys_quit();
 
-        bool scene(std::string scene);
+        bool scene(std::string const && scene);
 
         void scene_quit();
     }

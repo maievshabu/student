@@ -5,6 +5,7 @@
 #include "../inc/constant/menu.hpp"
 #include "../inc/scene/base.hpp"
 #include "../inc/scene/student.hpp"
+#include <limits>
 
 using namespace MAIEV::CONSTANT;
 using namespace MAIEV::SCENE;
@@ -32,7 +33,7 @@ namespace MAIEV{
             std::cout << "quit::[bye bye]" << std::endl;
         }
 
-        bool scene(std::string scene)
+        bool scene(std::string const && scene)
         {
             bool flag(false);
             if (scene == "student"){
@@ -58,47 +59,50 @@ namespace MAIEV{
             std::cout << "scene quit::[bye bye]" << std::endl;
         }
 
-        Menu choose2Menu(std::string choose)
-        {
-            if (choose == "help"){
-                return Menu::HELP;
-            }else if (choose == "search"){
-                return Menu::SEARCH;
-            }else if (choose == "act"){
-                return Menu::ACT;
-            }else if (choose == "view"){
-                return Menu::VIEW;
-            }else if (choose == "quit"){
-                return Menu::QUIT;
-            }else{
-                return Menu::UNKNOW;
-            }
-        }
+//        Menu choose2Menu(std::string choose)
+//        {
+//            if (choose == "help"){
+//                return Menu::HELP;
+//            }else if (choose == "search"){
+//                return Menu::SEARCH;
+//            }else if (choose == "act"){
+//                return Menu::ADD;
+//            }else if (choose == "view"){
+//                return Menu::VIEW;
+//            }else if (choose == "quit"){
+//                return Menu::QUIT;
+//            }else{
+//                return Menu::UNKNOW;
+//            }
+//        }
 
-        bool action(Menu menu, Base & scene)
-        {
-            bool flag(false);
-            switch (menu){
-                case Menu::HELP :
-                default:
-                    std::cout << "help?????????????????" << std::endl;
-                    flag = scene.help();
-                    break;
-                case Menu::SEARCH :
-                    flag = scene.search();
-                    break;
-                case Menu::ACT :
-                    flag = scene.act();
-                    break;
-                case Menu::VIEW :
-                    flag = scene.view();
-                    break;
-                case Menu::QUIT:
-                    flag = scene.quit();
-                    break;
-            }
-
-            return flag;
-        }
+//        bool action(Menu menu, Base & scene)
+//        {
+//            bool flag(false);
+//            switch (menu){
+//                case Menu::HELP :
+//                default:
+//                    std::cout << "help?????????????????" << std::endl;
+//                    flag = scene.help();
+//                    break;
+//                case Menu::SEARCH :
+//                    readData(scene);
+//                    flag = scene.search();
+//                    break;
+//                case Menu::ACT :
+//                    readData(scene);
+//                    flag = scene.act();
+//                    break;
+//                case Menu::VIEW :
+//                    readData(scene);
+//                    flag = scene.view();
+//                    break;
+//                case Menu::QUIT:
+//                    flag = scene.quit();
+//                    break;
+//            }
+//
+//            return flag;
+//        }
     }
 }

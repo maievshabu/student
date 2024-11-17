@@ -12,13 +12,15 @@ namespace MAIEV{
 
             HELP = 0,
 
-            ACT = 1,
+            ADD = 1,
 
             SEARCH = 2,
 
             VIEW = 3,
 
-            QUIT = 4
+            QUIT = 4,
+
+            EDIT = 5
 
         };
     }
