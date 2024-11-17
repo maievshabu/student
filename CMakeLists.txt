@@ -4,6 +4,7 @@ project(student)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(student src/main.cpp
+        src/student.cpp
         src/common/helper.cpp
-        src/common/logo.cpp
+        src/common/common.cpp
         )

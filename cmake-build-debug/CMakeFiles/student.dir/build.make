@@ -69,9 +69,22 @@ CMakeFiles/student.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/student.dir/src/main.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\work\student\src\main.cpp -o CMakeFiles\student.dir\src\main.cpp.s
 
+CMakeFiles/student.dir/src/student.cpp.obj: CMakeFiles/student.dir/flags.make
+CMakeFiles/student.dir/src/student.cpp.obj: ../src/student.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\work\student\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/student.dir/src/student.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\student.dir\src\student.cpp.obj -c C:\work\student\src\student.cpp
+
+CMakeFiles/student.dir/src/student.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/student.dir/src/student.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\work\student\src\student.cpp > CMakeFiles\student.dir\src\student.cpp.i
+
+CMakeFiles/student.dir/src/student.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/student.dir/src/student.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\work\student\src\student.cpp -o CMakeFiles\student.dir\src\student.cpp.s
+
 CMakeFiles/student.dir/src/common/helper.cpp.obj: CMakeFiles/student.dir/flags.make
 CMakeFiles/student.dir/src/common/helper.cpp.obj: ../src/common/helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\work\student\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/student.dir/src/common/helper.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\work\student\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/student.dir/src/common/helper.cpp.obj"
 	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\student.dir\src\common\helper.cpp.obj -c C:\work\student\src\common\helper.cpp
 
 CMakeFiles/student.dir/src/common/helper.cpp.i: cmake_force
@@ -82,36 +95,38 @@ CMakeFiles/student.dir/src/common/helper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/student.dir/src/common/helper.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\work\student\src\common\helper.cpp -o CMakeFiles\student.dir\src\common\helper.cpp.s
 
-CMakeFiles/student.dir/src/common/logo.cpp.obj: CMakeFiles/student.dir/flags.make
-CMakeFiles/student.dir/src/common/logo.cpp.obj: ../src/common/logo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\work\student\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/student.dir/src/common/logo.cpp.obj"
-	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\student.dir\src\common\logo.cpp.obj -c C:\work\student\src\common\logo.cpp
+CMakeFiles/student.dir/src/common/common.cpp.obj: CMakeFiles/student.dir/flags.make
+CMakeFiles/student.dir/src/common/common.cpp.obj: ../src/common/common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\work\student\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/student.dir/src/common/common.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\student.dir\src\common\common.cpp.obj -c C:\work\student\src\common\common.cpp
 
-CMakeFiles/student.dir/src/common/logo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/student.dir/src/common/logo.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\work\student\src\common\logo.cpp > CMakeFiles\student.dir\src\common\logo.cpp.i
+CMakeFiles/student.dir/src/common/common.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/student.dir/src/common/common.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\work\student\src\common\common.cpp > CMakeFiles\student.dir\src\common\common.cpp.i
 
-CMakeFiles/student.dir/src/common/logo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/student.dir/src/common/logo.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\work\student\src\common\logo.cpp -o CMakeFiles\student.dir\src\common\logo.cpp.s
+CMakeFiles/student.dir/src/common/common.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/student.dir/src/common/common.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\work\student\src\common\common.cpp -o CMakeFiles\student.dir\src\common\common.cpp.s
 
 # Object files for target student
 student_OBJECTS = \
 "CMakeFiles/student.dir/src/main.cpp.obj" \
+"CMakeFiles/student.dir/src/student.cpp.obj" \
 "CMakeFiles/student.dir/src/common/helper.cpp.obj" \
-"CMakeFiles/student.dir/src/common/logo.cpp.obj"
+"CMakeFiles/student.dir/src/common/common.cpp.obj"
 
 # External object files for target student
 student_EXTERNAL_OBJECTS =
 
 student.exe: CMakeFiles/student.dir/src/main.cpp.obj
+student.exe: CMakeFiles/student.dir/src/student.cpp.obj
 student.exe: CMakeFiles/student.dir/src/common/helper.cpp.obj
-student.exe: CMakeFiles/student.dir/src/common/logo.cpp.obj
+student.exe: CMakeFiles/student.dir/src/common/common.cpp.obj
 student.exe: CMakeFiles/student.dir/build.make
 student.exe: CMakeFiles/student.dir/linklibs.rsp
 student.exe: CMakeFiles/student.dir/objects1.rsp
 student.exe: CMakeFiles/student.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\work\student\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable student.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\work\student\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable student.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\student.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

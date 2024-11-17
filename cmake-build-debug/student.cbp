@@ -82,13 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/work/student/src/common/common.cpp">
+			<Option target="student"/>
+		</Unit>
 		<Unit filename="C:/work/student/src/common/helper.cpp">
 			<Option target="student"/>
 		</Unit>
-		<Unit filename="C:/work/student/src/common/logo.cpp">
+		<Unit filename="C:/work/student/src/main.cpp">
 			<Option target="student"/>
 		</Unit>
-		<Unit filename="C:/work/student/src/main.cpp">
+		<Unit filename="C:/work/student/src/student.cpp">
 			<Option target="student"/>
 		</Unit>
 		<Unit filename="C:/work/student/CMakeLists.txt">

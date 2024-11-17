@@ -3,12 +3,15 @@
 //
 
 #include <iostream>
+#include "../inc/student.hpp"
+
+using namespace MAIEV::ENTITY;
 
 namespace MAIEV{
     namespace HELPER{
         bool help()
         {
-            std::cout << "Usage:[quit,act,view,act]" << std::endl;
+            std::cout << "Usage:[quit,search,view,act,help]" << std::endl;
             return true;
         }
 
@@ -27,6 +30,25 @@ namespace MAIEV{
         bool view()
         {
             std::cout << "view ?? " << std::endl;
+            return true;
+        }
+
+        bool add()
+        {
+            std::cout << "add" << std::endl;
+            return true;
+        }
+
+        bool edit()
+        {
+            Student tmp;
+            std::cout << "edit" << std::endl;
+            return true;
+        }
+
+        bool del()
+        {
+            std::cout << "del" << std::endl;
             return true;
         }
 

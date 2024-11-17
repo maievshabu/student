@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/work/student/src/common/common.cpp" "C:/work/student/cmake-build-debug/CMakeFiles/student.dir/src/common/common.cpp.obj"
   "C:/work/student/src/common/helper.cpp" "C:/work/student/cmake-build-debug/CMakeFiles/student.dir/src/common/helper.cpp.obj"
-  "C:/work/student/src/common/logo.cpp" "C:/work/student/cmake-build-debug/CMakeFiles/student.dir/src/common/logo.cpp.obj"
   "C:/work/student/src/main.cpp" "C:/work/student/cmake-build-debug/CMakeFiles/student.dir/src/main.cpp.obj"
+  "C:/work/student/src/student.cpp" "C:/work/student/cmake-build-debug/CMakeFiles/student.dir/src/student.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

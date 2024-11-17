@@ -2,8 +2,8 @@
 // Created by xiaowei003 on 2024/11/15.
 //
 
-#ifndef STUDENT_HELPER_H
-#define STUDENT_HELPER_H
+#ifndef STUDENT_HELPER_HPP
+#define STUDENT_HELPER_HPP
 
 namespace MAIEV{
     namespace HELPER {
@@ -18,7 +18,12 @@ namespace MAIEV{
 
         bool view();
 
+        bool add();
+
+        bool edit();
+
+        bool del();
     }
 }
 
-#endif //STUDENT_HELPER_H
+#endif //STUDENT_HELPER_HPP

@@ -6,14 +6,17 @@
 #define STUDENT_COURSE_H
 namespace MAIEV{
     namespace CONSTANT{
-        enum class Course{
+        enum class SCENE{
 
             UNKNOW = -1,
 
-            MATHS = 1,
+            //学生场景
+            STUDENT = 1,
 
-            ENGLISH = 2;
+            //年纪场景
+            GRADE = 1
 
+            //班级场景
         };
     }
 }

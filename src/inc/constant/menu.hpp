@@ -2,8 +2,8 @@
 // Created by xiaowei003 on 2024/11/15.
 //
 
-#ifndef STUDENT_MENU_H
-#define STUDENT_MENU_H
+#ifndef STUDENT_MENU_HPP
+#define STUDENT_MENU_HPP
 namespace MAIEV{
     namespace CONSTANT{
         enum class Menu
@@ -24,4 +24,4 @@ namespace MAIEV{
     }
 }
 
-#endif //STUDENT_MENU_H
+#endif //STUDENT_MENU_HPP

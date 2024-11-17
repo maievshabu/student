@@ -122,6 +122,33 @@ student/fast:
 	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/build
 .PHONY : student/fast
 
+src/common/common.obj: src/common/common.cpp.obj
+
+.PHONY : src/common/common.obj
+
+# target to build an object file
+src/common/common.cpp.obj:
+	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/common/common.cpp.obj
+.PHONY : src/common/common.cpp.obj
+
+src/common/common.i: src/common/common.cpp.i
+
+.PHONY : src/common/common.i
+
+# target to preprocess a source file
+src/common/common.cpp.i:
+	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/common/common.cpp.i
+.PHONY : src/common/common.cpp.i
+
+src/common/common.s: src/common/common.cpp.s
+
+.PHONY : src/common/common.s
+
+# target to generate assembly for a file
+src/common/common.cpp.s:
+	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/common/common.cpp.s
+.PHONY : src/common/common.cpp.s
+
 src/common/helper.obj: src/common/helper.cpp.obj
 
 .PHONY : src/common/helper.obj
@@ -148,33 +175,6 @@ src/common/helper.s: src/common/helper.cpp.s
 src/common/helper.cpp.s:
 	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/common/helper.cpp.s
 .PHONY : src/common/helper.cpp.s
-
-src/common/logo.obj: src/common/logo.cpp.obj
-
-.PHONY : src/common/logo.obj
-
-# target to build an object file
-src/common/logo.cpp.obj:
-	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/common/logo.cpp.obj
-.PHONY : src/common/logo.cpp.obj
-
-src/common/logo.i: src/common/logo.cpp.i
-
-.PHONY : src/common/logo.i
-
-# target to preprocess a source file
-src/common/logo.cpp.i:
-	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/common/logo.cpp.i
-.PHONY : src/common/logo.cpp.i
-
-src/common/logo.s: src/common/logo.cpp.s
-
-.PHONY : src/common/logo.s
-
-# target to generate assembly for a file
-src/common/logo.cpp.s:
-	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/common/logo.cpp.s
-.PHONY : src/common/logo.cpp.s
 
 src/main.obj: src/main.cpp.obj
 
@@ -203,6 +203,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/student.obj: src/student.cpp.obj
+
+.PHONY : src/student.obj
+
+# target to build an object file
+src/student.cpp.obj:
+	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/student.cpp.obj
+.PHONY : src/student.cpp.obj
+
+src/student.i: src/student.cpp.i
+
+.PHONY : src/student.i
+
+# target to preprocess a source file
+src/student.cpp.i:
+	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/student.cpp.i
+.PHONY : src/student.cpp.i
+
+src/student.s: src/student.cpp.s
+
+.PHONY : src/student.s
+
+# target to generate assembly for a file
+src/student.cpp.s:
+	$(MAKE) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/src/student.cpp.s
+.PHONY : src/student.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,15 +239,18 @@ help:
 	@echo ... edit_cache
 	@echo ... student
 	@echo ... rebuild_cache
+	@echo ... src/common/common.obj
+	@echo ... src/common/common.i
+	@echo ... src/common/common.s
 	@echo ... src/common/helper.obj
 	@echo ... src/common/helper.i
 	@echo ... src/common/helper.s
-	@echo ... src/common/logo.obj
-	@echo ... src/common/logo.i
-	@echo ... src/common/logo.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/student.obj
+	@echo ... src/student.i
+	@echo ... src/student.s
 .PHONY : help
 
 
